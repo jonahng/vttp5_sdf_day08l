@@ -1,0 +1,2 @@
+testing filewriter writingProduct [id=20000, prodName=Iphone 16, prodDesc=smartphone, prodCategory=Mobile, price=1200.0, createdDate=Mon Oct 21 13:18:56 GMT+08:00 2024]
+Product [id=40001, prodName=Iphone 16 Pro, prodDesc=Fancy Iphone, prodCategory=Mobile, price=2000.0, createdDate=Mon Oct 21 13:18:56 GMT+08:00 2024]

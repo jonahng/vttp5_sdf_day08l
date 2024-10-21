@@ -21,9 +21,9 @@ public class Permutations {
     for(char c: string.toCharArray()){
         characters.add(c);
     }
-    System.out.println(characters);
+    System.out.println("System input is" + characters);
 
-    for(int i=0; i<1000; i++){
+    for(int i=0; i<100000; i++){
     Collections.shuffle(characters);
     StringBuilder shuffledString = new StringBuilder();
     for(char c: characters){
@@ -37,12 +37,7 @@ public class Permutations {
 
     System.out.println(permutations);
     System.out.println("Total unique variations = " + permutations.size());
-
-
     
-
-
-
     }
     
 
