@@ -5,10 +5,13 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 import java.util.stream.Collectors;
 import java.util.*;
 import java.io.*;
 
+import project01am.day08.MyImplementation;
 import project01am.day08.Product;
 
 public class App {
@@ -75,7 +78,15 @@ public class App {
         System.out.println("Ascending order" + arr.toString());
 
 
-
+        //Threading recap; using MyImplementation.java
+        MyImplementation myImpl01 = new MyImplementation();
+        MyImplementation myImpl02 = new MyImplementation();
+        MyImplementation myImpl03 = new MyImplementation();
+        ExecutorService es = Executors.newFixedThreadPool(3);
+        es.execute(myImpl01);
+        es.execute(myImpl02);
+        es.execute(myImpl03);
+        es.shutdown();
     }
     
 }
